@@ -1,0 +1,75 @@
+int numOfCities=c.size();
+    String cities[]= new String[c.size()];
+    for(int i=0;i<c.size();i++){
+        cities[i]=c.get(i);
+    }
+    int xCoordinates[]= new int[x.size()];
+    for(int i=0;i<x.size();i++){
+        xCoordinates[i]=x.get(i);
+    }
+    int yCoordinates[]= new int[y.size()];
+    for(int i=0;i<y.size();i++){
+        yCoordinates[i]=y.get(i);
+    }
+    String queries[]= new String[q.size()]; 
+     for(int i=0;i<q.size();i++){
+        queries[i]=q.get(i);
+    }
+    
+    HashMap<String,Map.Entry<String,Integer>> map = new HashMap<>();
+        PriorityQueue<Map.Entry<String,Integer>> pq[] = new PriorityQueue[numOfCities];
+        HashMap<String,Integer> map1 = new HashMap<>();
+        for(int i = 0;i<cities.length;i++){
+            map1.put(cities[i],i);
+        }
+        for(int i = 0;i<pq.length;i++)
+            pq[i] = new PriorityQueue<>((a,b) -> a.getValue()-b.getValue()!=0?a.getValue()-b.getValue():a.getKey().compareTo(b.getKey()));
+        for(int i = 0;i<xCoordinates.length;i++){
+            for(int j = 0;j<xCoordinates.length;j++){
+                if(i == j)
+                    continue;
+                if(xCoordinates[i] == xCoordinates[j]){
+                    int xa = Math.abs(xCoordinates[i] - xCoordinates[j]);
+                    int ya = Math.abs(yCoordinates[i] - yCoordinates[j]);
+                    int d = xa+ya;
+                    HashMap<String,Integer> m = new HashMap<>();
+                    m.put(cities[j],d);
+                    for(Map.Entry<String,Integer> e : m.entrySet())
+                        pq[i].offer(e);
+                }
+            }
+        }
+        for(int i = 0;i<yCoordinates.length;i++){
+            for(int j = 0;j<yCoordinates.length;j++){
+                if(i == j)
+                    continue;
+                if(yCoordinates[i] == yCoordinates[j]){
+                    int xa = Math.abs(xCoordinates[i] - xCoordinates[j]);
+                    int ya = Math.abs(yCoordinates[i] - yCoordinates[j]);
+                    int d = xa+ya;
+                    HashMap<String,Integer> m = new HashMap<>();
+                    m.put(cities[j],d);
+                    for(Map.Entry<String,Integer> e : m.entrySet())
+                        pq[i].offer(e);
+                }
+            }
+        }
+        String res[] = new String[q.size()];
+        for(int i = 0;i<queries.length;i++){
+            int idx = map1.get(queries[i]);
+            if(!pq[idx].isEmpty()){
+                Map.Entry<String,Integer> e = pq[idx].peek();
+                res[i] = e.getKey();
+            }
+            else res[i]= null;
+        }
+    
+        System.out.println(Arrays.toString(res));
+        List<String> asd= new ArrayList<String>();
+        for(int i=0;i<res.length;i++){
+            if(res[i]==null) asd.add("NONE");
+            else 
+            asd.add(res[i]);
+        }
+    
+        return asd;

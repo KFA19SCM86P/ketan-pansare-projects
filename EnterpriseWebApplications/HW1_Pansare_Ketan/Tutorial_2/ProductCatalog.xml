@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ProductCatalog>
+
+<WearCatalog>
+    <wear id="W1">
+        <name>Fitbit 3</name>
+        <price>399.99</price>
+        <image>fb1.jpg</image>
+        <manufacturer>Fitbit</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </wear>
+	
+	<wear id="W11">
+        <name>Fitbit 4</name>
+        <price>499.99</price>
+        <image>fb2.jpg</image>
+        <manufacturer>Fitbit</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </wear>
+	
+	<wear id="W2">
+        <name>Apple Watch 3</name>
+        <price>399.99</price>
+        <image>a1.jpg</image>
+        <manufacturer>Apple</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </wear>
+	
+	<wear id="W22">
+        <name>Apple Watch 4</name>
+        <price>499.99</price>
+        <image>a2.jpg</image>
+        <manufacturer>Apple</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </wear>
+	
+	<wear id="W3">
+        <name>MI Band</name>
+        <price>399.99</price>
+        <image>mi.jpg</image>
+        <manufacturer>Mi</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </wear>
+   
+</WearCatalog>
+
+<TvCatalog>
+	<tv id="tv1">
+        <name>Toshiba 51 4K</name>
+        <price>399.99</price>
+        <image>toshiba-51-4k.jpg</image>
+        <manufacturer>Toshiba</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </tv>
+	
+    <tv id="tv6">
+        <name>Samsung 51 4K</name>
+        <price>399.99</price>
+        <image>samsung-40-4k.jpg</image>
+        <manufacturer>Samsung</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </tv>
+
+    <tv id="tv7">
+        <name>Samsung 51 4K</name>
+        <price>399.99</price>
+        <image>s3.jpg</image>
+        <manufacturer>Samsung</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </tv>
+
+<tv id="tv8">
+        <name>Sasmsung 51 4K</name>
+        <price>399.99</price>
+        <image>samsung-40-4k.jpg</image>
+        <manufacturer>Samsung</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </tv>
+
+    <tv id="tv9">
+        <name>Samsung 51 4K</name>
+        <price>399.99</price>
+        <image>s1.jpg</image>
+        <manufacturer>Samsung</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </tv>
+
+
+	<tv id="tv2">
+        <name>Philips 40 4K</name>
+        <price>499.99</price>
+        <image>s2.jpg</image>
+        <manufacturer>Philips</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </tv>
+
+    <tv id="tv3">
+        <name>Samsung 40 4K</name>
+        <price>499.99</price>
+        <image>s4.jpg</image>
+        <manufacturer>Samsung</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </tv>
+	
+	<tv id="tv5">
+        <name>MI Curved 4K</name>
+        <price>599.99</price>
+        <image>s5.jpg</image>
+        <manufacturer>MI</manufacturer>
+        <condition>New</condition>
+        <discount>20.0</discount>
+    </tv>
+	
+	<tv id="tv4">
+        <name>Sony HDR 4k 60</name>
+        <price>599.99</price>
+        <image>sony-4k-60.jpg</image>
+        <manufacturer>Sony</manufacturer>
+        <condition>New</condition>
+        <discount>15.0</discount>
+    </tv>
+</TvCatalog>
+
+<LaptopCatalog>
+	<laptop id="lp1">
+        <name>Lennovo Slim</name>
+        <price>899.99</price>
+        <image>l1.jpg</image>
+        <manufacturer>Lennovo</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </laptop>
+    <laptop id="lp4">
+        <name>MI Curved 4K</name>
+        <price>599.99</price>
+        <image>l1.jpg</image>
+        <manufacturer>MI</manufacturer>
+        <condition>New</condition>
+        <discount>20.0</discount>
+    </laptop>
+    <laptop id="lp5">
+        <name>Philips 40 4K</name>
+        <price>499.99</price>
+        <image>l1.jpg</image>
+        <manufacturer>Philips</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </laptop>
+	<laptop id="lp11">
+        <name>Lennovo Gamer</name>
+        <price>1099.99</price>
+        <image>l2.jpg</image>
+        <manufacturer>Lennovo</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </laptop>
+	
+	<laptop id="lp2">
+        <name>Macbook Air</name>
+        <price>1049.99</price>
+        <image>a1.jpg</image>
+        <manufacturer>Apple</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </laptop>
+	
+	<laptop id="lp22">
+        <name>Macbook Pro</name>
+        <price>1499.99</price>
+        <image>a2.jpg</image>
+        <manufacturer>Apple</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </laptop>
+	
+	<laptop id="lp3">
+        <name>Sony VAIO</name>
+        <price>449.99</price>
+        <image>s1.jpg</image>
+        <manufacturer>Sony</manufacturer>
+        <condition>New</condition>
+        <discount>10.0</discount>
+    </laptop>
+</LaptopCatalog>
+
+<VaCatalog>
+    <va id="v1">
+        <name>Alexa Eco</name>
+        <price>149.99</price>
+        <image>a1.jpg</image>
+        <manufacturer>Amazon</manufacturer>
+        <condition>New</condition>
+        <discount>40.0</discount>
+    </va>
+	
+	<va id="v11">
+        <name>Alexa Eco Dot</name>
+        <price>189.99</price>
+        <image>a2.jpg</image>
+        <manufacturer>Amazon</manufacturer>
+        <condition>New</condition>
+        <discount>40.0</discount>
+    </va>
+	<va id="v2">
+        <name>Google Now</name>
+        <price>189.99</price>
+        <image>g1.jpg</image>
+        <manufacturer>Google</manufacturer>
+        <condition>New</condition>
+        <discount>40.0</discount>
+    </va>
+	<va id="v3">
+        <name>Apple Home Pod</name>
+        <price>289.99</price>
+        <image>ap1.jpg</image>
+        <manufacturer>Apple</manufacturer>
+        <condition>New</condition>
+        <discount>40.0</discount>
+    </va>
+</VaCatalog>
+
+<WCatalog>
+    <wireless id="w1">
+        <name>JBL</name>
+        <price>9.99</price>
+        <image>jbl1.jpg</image>
+        <manufacturer>JBL</manufacturer>
+        <condition>New</condition>
+        <discount>40.0</discount>
+    </wireless>
+	<wireless id="w2">
+        <name>Bose</name>
+        <price>19.99</price>
+        <image>bose1.jpg</image>
+        <manufacturer>Bose</manufacturer>
+        <condition>New</condition>
+        <discount>40.0</discount>
+    </wireless>
+	<wireless id="w3">
+        <name>Sennheiser</name>
+        <price>39.99</price>
+        <image>sennheiser.jpg</image>
+        <manufacturer>Sennheiser</manufacturer>
+        <condition>New</condition>
+        <discount>40.0</discount>
+    </wireless>
+</WCatalog>
+
+<PhonesCatalog>
+<phone id="p1">
+        <name>Iphone 11 Pro</name>
+        <price>999.99</price>
+        <image>ip11pro.jpg</image>
+        <manufacturer>Apple</manufacturer>
+        <condition>New</condition>
+        <discount>15.0</discount>
+</phone>
+
+<phone id="p11">
+        <name>Iphone 11</name>
+        <price>699.99</price>
+        <image>ip11.jpg</image>
+        <manufacturer>Apple</manufacturer>
+        <condition>New</condition>
+        <discount>15.0</discount>
+</phone>
+
+<phone id="p2">
+        <name>OnePlus 7 Pro</name>
+        <price>699.99</price>
+        <image>op7pro.jpg</image>
+        <manufacturer>OnePlus</manufacturer>
+        <condition>New</condition>
+        <discount>15.0</discount>
+</phone>
+
+<phone id="p22">
+        <name>OnePlus 7T</name>
+        <price>499.99</price>
+        <image>op7t.jpg</image>
+        <manufacturer>OnePlus</manufacturer>
+        <condition>New</condition>
+        <discount>15.0</discount>
+</phone>
+
+<phone id="p3">
+        <name>Moto G5S</name>
+        <price>299.99</price>
+        <image>moto.jpg</image>
+        <manufacturer>Moto</manufacturer>
+        <condition>New</condition>
+        <discount>15.0</discount>
+</phone>
+
+</PhonesCatalog>
+
+</ProductCatalog>

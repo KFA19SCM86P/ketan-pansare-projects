@@ -1,0 +1,30 @@
+public static String compressWord(String word, int k) {
+    // Write your code here CharacterStack
+        Stack<Character> CharacterStack = new Stack<>();
+        Stack<Integer> stackAdjCnt = new Stack<>();
+
+        for (char c : word.toCharArray()) {
+            if (!CharacterStack.isEmpty() && CharacterStack.peek() == c) {
+                stackAdjCnt.push(stackAdjCnt.peek() + 1);
+            } else {
+                stackAdjCnt.push(1);
+            }
+            CharacterStack.push(c);
+            if (stackAdjCnt.peek() == k) {
+                for (int i = 0; i < k; i++) { // pop k adjacent equal chars
+                    CharacterStack.pop();
+                    stackAdjCnt.pop();
+                }
+            }
+        }
+
+        // Convert stack to string
+        StringBuilder sb = new StringBuilder();
+        while (!CharacterStack.empty()) {
+            sb.append(CharacterStack.pop());
+        }
+        return sb.reverse().toString();
+
+    }
+
+}

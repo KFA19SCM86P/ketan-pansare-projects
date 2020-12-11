@@ -1,0 +1,165 @@
+<!-- center portion content for home index page-->
+<div id="content">
+	<div class="post">
+		<h2 class="title">
+			<a href="#">Welcome to BestDeal  </a>
+		</h2>
+		<div class="entry">
+			<img src="images/site/consoles.jpg"
+				style="width: 600px; display: block; margin-left: auto; margin-right: auto" />
+		<!--	<br> <br>
+			<h2>The world trusts us to deliver SPEEDY service for E-shoppers!</h2>
+			<br> <br>
+			<h1>We beat our competitors in all aspects. Best Deals Guaranteed</h2>  -->
+		</div>
+		
+		
+	<!-- <center>	
+		<img class="mySlides" src="images/img/ima.jpg"  height="400" width="600">
+<img class="mySlides" src="images/img/ima2.jpg" height="400" width="600">
+<img class="mySlides" src="images/img/ima3.jpg" height="400" width="600">
+<img class="mySlides" src="images/img/ima4.jpg" height="400" width="600">
+
+<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</center> -->
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+</script>
+
+	</div>
+	
+	
+	
+	
+	<div class="post">
+		<h2 class="title meta">
+			<a style="font-size: 24px;">Best Sellers</a>
+		</h2>
+			<div class="entry">
+		
+			<table id="bestseller">
+				<tr>
+					<td><div id="shop_item">
+							<h3>Iphone-XR</h3>
+							<strong>899.99$</strong>
+							<ul>
+								<li id="item"><img src="images/tablets/Iphone-XR.jpg" alt="" />
+								</li>
+								<li>
+		<form action='Cart' method='post'><input type='submit' class="btnbuy" value='Buy Now'>
+							<input type='hidden' name='name' value='Iphone-XR'>
+							<input type='hidden' name='type' value='tablets'>
+							<input type='hidden' name='maker' value='apple'>
+							<input type='hidden' name='access' value=''>
+				
+			</form></li>
+								
+								<li>
+		<form action='WriteReview' method='post'><input type='submit' class="btnreview" value='WriteReview'>
+		
+							<input type='hidden' name='name' value='Iphone-XR'>
+							<input type='hidden' name='type' value='tablets'>
+							<input type='hidden' name='maker' value='apple'>
+							<input type='hidden' name='access' value=''>
+		</form></li>
+							</ul>
+						</div>
+					</td>
+					<td><div id="shop_item">
+							<h3>HP Laptop</h3>
+							<strong>850.49$</strong>
+							<ul>
+								<li id="item"><img src="images/laptops/HP.jpg" alt="" />
+								</li>
+								<li><form action='Cart' method='post'><input type='submit' class="btnbuy" value='Buy Now'>
+							<input type='hidden' name='name' value='hp'>
+							<input type='hidden' name='type' value='laptops'>
+							<input type='hidden' name='maker' value='hp'>
+							<input type='hidden' name='access' value=''>
+								</form></li>
+								<li><form action='WriteReview' method='post'><input type='submit' class="btnreview" value='WriteReview'>
+							<input type='hidden' name='name' value='hp'>
+							<input type='hidden' name='type' value='laptops'>
+							<input type='hidden' name='maker' value='hp'>
+							<input type='hidden' name='access' value=''>
+									</form>
+										</li>
+							</ul>
+						</div></td>
+				</tr>
+				
+				
+				
+				<tr>
+					<td><div id="shop_item">
+							<h3>Sharp-HD</h3>
+							<strong>699.99$</strong>
+							<ul>
+								<li id="item"><img src="images/consoles/Sharp-HD.jpg" alt="" />
+								</li>
+								<li>
+		<form action='Cart' method='post'><input type='submit' class="btnbuy" value='Buy Now'>
+							<input type='hidden' name='name' value='Sharp-HD'>
+							<input type='hidden' name='type' value='consoles'>
+							<input type='hidden' name='maker' value='sharp'>
+							<input type='hidden' name='access' value=''>
+				
+			</form></li>
+								
+								<li>
+		<form action='WriteReview' method='post'><input type='submit' class="btnreview" value='WriteReview'>
+		
+							<input type='hidden' name='name' value='Sharp-HD'>
+							<input type='hidden' name='type' value='consoles'>
+							<input type='hidden' name='maker' value='sharp'>
+							<input type='hidden' name='access' value=''>
+		</form></li>
+							</ul>
+						</div>
+					</td>
+					<td><div id="shop_item">
+							<h3>Apple-X</h3>
+							<strong>350.49$</strong>
+							<ul>
+								<li id="item"><img src="images/fitness/Apple-X.jpg" alt="" />
+								</li>
+								<li><form action='Cart' method='post'><input type='submit' class="btnbuy" value='Buy Now'>
+							<input type='hidden' name='name' value='apple'>
+							<input type='hidden' name='type' value='fitnesss'>
+							<input type='hidden' name='maker' value='apple'>
+							<input type='hidden' name='access' value=''>
+								</form></li>
+								<li><form action='WriteReview' method='post'><input type='submit' class="btnreview" value='WriteReview'>
+							<input type='hidden' name='name' value='apple'>
+							<input type='hidden' name='type' value='fitnesss'>
+							<input type='hidden' name='maker' value='apple'>
+							<input type='hidden' name='access' value=''>
+									</form>
+										</li>
+							</ul>
+						</div></td>
+				</tr>
+				
+				
+				
+				
+			</table>
+		</div>
+	</div>
+</div>
+<!-- end #content -->

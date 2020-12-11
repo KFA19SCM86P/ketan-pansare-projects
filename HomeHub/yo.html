@@ -1,0 +1,61 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+    th{ 
+        color:#fff;
+     }
+</style>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+</head>
+<html>
+
+<table class="table table-striped">
+    <tr  class="bg-info">
+        <th>firstName</th>
+        <th>lastName</th>
+        <th>City</th>
+    </tr>
+
+    <tbody id="myTable">
+        
+    </tbody>
+</table>
+</html>
+
+<script>
+	const queryString = window.location.search;
+	console.log(queryString);
+	const urlParams = new URLSearchParams(queryString);
+	const city = urlParams.get('city');
+	const category = urlParams.get('category');
+
+	//console.log(product);
+	var myArray = []
+	$.ajax({
+		method:'GET',
+		url:`http://localhost/FixIt/GetProfessionals?city=${city}&category=${category}&subCategory=Repairs`,
+		success:function(response){
+			myArray = response
+			buildTable(myArray)
+			console.log(myArray)
+		}
+	})
+
+	function buildTable(data){
+		var table = document.getElementById('myTable')
+
+		for (var i = 0; i < data.length; i++){
+			var row = `<tr>
+							<td>${data[i].firstName}</td>
+							<td>${data[i].lastName}</td>
+							<td>${data[i].city}</td>
+					  </tr>`
+			table.innerHTML += row
+		}
+	}
+
+</script>
